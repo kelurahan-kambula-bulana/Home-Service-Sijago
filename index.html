@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiJago - Layanan Service AC, Kulkas, TV & Mesin Cuci</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#beranda">
+                    <img src="image/sijagologo.png" alt="SiJago Logo" class="logo-img">
+                </a>
+                
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beranda">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#layanan">Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prosedur">Prosedur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fitur">Fitur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lokasi">Lokasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#keluhan">Keluhan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontak-admin">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Beranda dengan Carousel -->
+        <section id="beranda" class="beranda-section">
+            <div id="berandaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#berandaCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#berandaCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#berandaCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#berandaCarousel" data-bs-slide-to="3"></button>
+                </div>
+                
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-img" style="background-image: url('image/Si\ Jago\ _20260118_200526_0000.png');"></div>
+                        <div class="carousel-caption">
+                            <h1>Pemesanan Jasa Teknisi Dari Rumah</h1>
+                            <p>Membantu Menyelesaikan Problem Masalah Dirumah</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img" style="background-image: url('image/WhatsApp Image 2026-01-18 at 17.27.19 (2).jpeg');"></div>
+                        <div class="carousel-caption">
+                            <h1>Service AC Terpercaya</h1>
+                            <p>Perbaikan dan perawatan AC oleh teknisi berpengalaman</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img" style="background-image: url('image/WhatsApp Image 2026-01-18 at 17.27.15 (1).jpeg');"></div>
+                        <div class="carousel-caption">
+                            <h1>Service Televisi Terpercaya</h1>
+                            <p>Perbaikan cepat untuk kenyamanan hiburan anda dirumah</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img" style="background-image: url('image/FOTO.png');"></div>
+                        <div class="carousel-caption">
+                            <h1>Servis Kulkas & Mesin Cuci</h1>
+                            <p>Perbaikan cepat untuk peralatan rumah tangga anda dirumah</p>
+                            <a href="javascript:void(0);" class="btn-whatsapp" onclick="openWhatsApp('Saya tertarik dengan layanan SiJago, bisa informasi lebih lanjut?')">
+                                <i class="bi bi-whatsapp"></i> Whatsap Kami
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#berandaCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#berandaCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Section 2: Layanan -->
+        <section id="layanan" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Layanan</h2>
+                <h3 class="section-subtitle">KAMI Memberikan Layanan Terbaik Dengan Beberapa Pilihan</h3>
+                
+                <div class="horizontal-scroll-container">
+                    <div class="horizontal-scroll">
+                        <!-- Card 1: Pembayaran -->
+                        <div class="card layanan-card">
+                            <div class="card-icon">
+                                <i class="bi bi-credit-card"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pembayaran</h5>
+                                <p class="card-text">Melakukan DP (Down Payment) atau uang muka</p>
+                                <p class="highlight-text">Pemesanan mudah, tinggal pilih jadwal dan teknis</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2: Pemesanan -->
+                        <div class="card layanan-card">
+                            <div class="card-icon">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pemesanan</h5>
+                                <p class="card-text">Pemesanan mudah, tinggal pilih jadwal dan teknis</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3: Respon Pelanggan -->
+                        <div class="card layanan-card">
+                            <div class="card-icon">
+                                <i class="bi bi-chat-dots"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Respon Pelanggan</h5>
+                                <p class="card-text">Kecepatan dan keefektifan dalam menanggapi keluhan pelanggan</p>
+                                <p class="highlight-text">Cukup pesan jasa dari rumah</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 4: Panggil Teknisi -->
+                        <div class="card layanan-card">
+                            <div class="card-icon">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Panggil Teknisi</h5>
+                                <p class="card-text">Cukup pesan jasa dari rumah</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 5: Pelayanan -->
+                        <div class="card layanan-card">
+                            <div class="card-icon">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pelayanan</h5>
+                                <p class="card-text">Layanan cepat, aman dan langsung ke lokasi</p>
+                                <p class="highlight-text">Sijago</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Prosedur -->
+        <section id="prosedur" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Prosedur</h2>
+                <div class="brand-logo text-center mb-5">
+                    <h3 class="brand-name">SiJago<sup>®</sup></h3>
+                    <p class="brand-tagline">Semua Jenis Layanan</p>
+                </div>
+                
+                <div class="horizontal-scroll-container">
+                    <div class="horizontal-scroll">
+                        <!-- Kulkas -->
+                        <div class="prosedur-item" data-target="kulkas">
+                            <div class="prosedur-img">
+                                <img src="image/WhatsApp Image 2026-01-18 at 17.27.16 (3).jpeg" alt="Kulkas">
+                            </div>
+                            <div class="prosedur-label">
+                                <h4>Kulkas</h4>
+                            </div>
+                        </div>
+                        
+                        <!-- AC -->
+                        <div class="prosedur-item" data-target="ac">
+                            <div class="prosedur-img">
+                                <img src="image/WhatsApp Image 2026-01-18 at 17.27.19 (2).jpeg" alt="AC">
+                            </div>
+                            <div class="prosedur-label">
+                                <h4>AC</h4>
+                            </div>
+                        </div>
+                        
+                        <!-- Televisi -->
+                        <div class="prosedur-item" data-target="televisi">
+                            <div class="prosedur-img">
+                                <img src="image/WhatsApp Image 2026-01-18 at 17.27.15 (1).jpeg" alt="Televisi">
+                            </div>
+                            <div class="prosedur-label">
+                                <h4>Televisi</h4>
+                            </div>
+                        </div>
+                        
+                        <!-- Mesin Cuci -->
+                        <div class="prosedur-item" data-target="mesin-cuci">
+                            <div class="prosedur-img">
+                                <img src="image/WhatsApp Image 2026-01-18 at 17.27.16 (4).jpeg" alt="Mesin Cuci">
+                            </div>
+                            <div class="prosedur-label">
+                                <h4>Mesin Cuci</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Daftar Harga Modal (Tampil saat item prosedur diklik) -->
+        <div class="modal fade" id="hargaModal" tabindex="-1" aria-labelledby="hargaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="hargaModalLabel">si Jago - Daftar Harga Tingkat Kerusakan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="hargaModalBody">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" onclick="openWhatsApp('Saya ingin konsultasi tentang service:')">
+                            <i class="bi bi-whatsapp"></i> Hubungi Kami Sekarang
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Fitur -->
+        <section id="fitur" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Cara Menggunakan Layanan Si Jago</h2>
+                
+                <div class="horizontal-scroll-container">
+                    <div class="horizontal-scroll">
+                        <!-- Step 1 -->
+                        <div class="card fitur-card">
+                            <div class="step-number">1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pilih layanan si jago</h5>
+                                <p class="card-text">Pilih layanan atau jasa yang ingin kamu gunakan, setelah itu lihat harga dan tingkat kerusakan yang kamu alami</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="card fitur-card">
+                            <div class="step-number">2</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pemesanan</h5>
+                                <p class="card-text">Hubungi kami lewat whatsapp dengan mengklik tombol "Hubungi Kami Sekarang"</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="card fitur-card">
+                            <div class="step-number">3</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Konfirmasi Pemesanan</h5>
+                                <p class="card-text">Setelah melakukan pemesanan, anda akan menerima pemberitahuan serta di hubungi oleh penyedia jasa untuk konfirmasi lanjutan</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div class="card fitur-card">
+                            <div class="step-number">4</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Layanan pembayaran</h5>
+                                <p class="card-text">Down payment sebelum pengerjaan servis di lakukan dan setelah pengerjaan selesai dilakukankah pelunasan pembayaran</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <h3 class="brand-footer">SiJago</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Informasi Jenis Jasa dan Lokasi -->
+        <section id="lokasi" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Informasi Jenis Jasa Dan Lokasi</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="info-card">
+                            <h4 class="info-title">Jenis Jasa</h4>
+                            <ul class="list-group">
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill"></i> Service AC</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill"></i> Service Televisi</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill"></i> Service Kulkas</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill"></i> Service Mesin Cuci</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="info-card">
+                            <h4 class="info-title">Lokasi Pelayanan</h4>
+                            <div class="location-info">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <h5>Kota Bau-Bau</h5>
+                                <p>Melayani seluruh wilayah Kota Bau-Bau dan sekitarnya</p>
+                            </div>
+                            <div class="map-container">
+                                <!-- Google Maps Embed -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31771.221764286744!2d122.5763012911744!3d-5.507077546255223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da475a35ff82689%3A0x3030bfbcaf771f0!2sBaubau%2C%20Waborobo%2C%20Kec.%20Betoambari%2C%20Kota%20Bau-Bau%2C%20Sulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1768815803488!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="map-actions mt-3">
+                                    <button class="btn btn-sm btn-outline-primary" onclick="bukaGoogleMaps()">
+                                        <i class="bi bi-arrow-up-right-square"></i> Buka di Google Maps
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-success ms-2" onclick="bukaGoogleMapsRoute()">
+                                        <i class="bi bi-signpost"></i> Dapatkan Rute
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Form Keluhan -->
+<section id="keluhan" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <div class="keluhan-header text-center mb-4">
+                    <h3 class="brand-name">Si Jag<span class="brand-symbol">o</span></h3>
+                    <p class="text-muted">Beranda | Layanan | Prosedur | Fitur | Lokasi</p>
+                </div>
+                
+                <div class="card keluhan-card">
+                    <div class="card-body text-center">
+                        <!-- Ikon WhatsApp Besar -->
+                        <div class="whatsapp-icon-large mb-4">
+                            <i class="bi bi-whatsapp" style="font-size: 5rem; color: #25D366;"></i>
+                        </div>
+                        
+                        <h4 class="card-title mb-3">Langung Hubungi Admin WhatsApp</h4>
+                        <p class="mb-4">Klik tombol di bawah untuk langsung chat dengan admin SiJago. Kami siap membantu keluhan dan permintaan service Anda!</p>
+                        
+                        <!-- Tombol WhatsApp Besar -->
+                        <div class="d-grid gap-2 col-lg-6 mx-auto">
+                            <button class="btn btn-whatsapp-lg" onclick="openWhatsApp('Halo Admin SiJago, saya ingin konsultasi tentang layanan service')">
+                                <i class="bi bi-whatsapp me-2"></i> Chat WhatsApp Sekarang
+                            </button>
+                            
+                            <button class="btn btn-outline-primary mt-3" onclick="salinNomor()">
+                                <i class="bi bi-copy me-2"></i> Salin Nomor Admin
+                            </button>
+                        </div>
+                        
+                        <!-- Info Nomor WhatsApp -->
+                        <div class="whatsapp-info mt-5">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="info-box">
+                                        <i class="bi bi-clock text-primary me-2"></i>
+                                        <span>Respon Cepat (24/7)</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="info-box">
+                                        <i class="bi bi-headset text-primary me-2"></i>
+                                        <span>Admin Siaga Setiap Hari</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="info-box">
+                                        <i class="bi bi-check-circle text-primary me-2"></i>
+                                        <span>Gratis Konsultasi Awal</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="info-box">
+                                        <i class="bi bi-lightning text-primary me-2"></i>
+                                        <span>Booking Teknisi Langsung</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <h4 class="brand-footer">Sijago</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                                
+        <!-- Section 8: Kontak Admin -->
+        <section id="kontak-admin" class="section-padding bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3 class="mb-4">Hubungi Admin SiJago</h3>
+                        <div class="kontak-info">
+                            <div class="kontak-item mb-3">
+                                <i class="bi bi-whatsapp text-success fs-4 me-3"></i>
+                                <div>
+                                    <h5>Nomor WhatsApp Admin</h5>
+                                    <div class="nomor-whatsapp">
+                                        <span id="nomorAdmin">+62 812-3456-7890</span>
+                                        <button class="btn btn-sm btn-outline-primary ms-3" onclick="salinNomor()">
+                                            <i class="bi bi-copy"></i> Salin
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-success ms-2" onclick="tambahKontak()">
+                                            <i class="bi bi-person-plus"></i> Tambah ke Kontak
+                                        </button>
+                                    </div>
+                                    <p class="text-muted mt-2">Klik tombol di bawah untuk langsung chat dengan admin</p>
+                                    <button class="btn btn-success mt-2" onclick="openWhatsApp('Halo Admin SiJago, saya ingin memesan layanan service')">
+                                        <i class="bi bi-whatsapp"></i> Chat Sekarang
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="kontak-item mb-3">
+                                <i class="bi bi-envelope text-primary fs-4 me-3"></i>
+                                <div>
+                                    <h5>Email Admin</h5>
+                                    <div class="email-admin">
+                                        <span id="emailAdmin">admin@sijago.com</span>
+                                        <button class="btn btn-sm btn-outline-primary ms-3" onclick="salinEmail()">
+                                            <i class="bi bi-copy"></i> Salin Email
+                                        </button>
+                                    </div>
+                                    <p class="text-muted mt-2">Untuk keluhan dan pertanyaan resmi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="qr-code-container">
+                            <h5 class="mb-3">Scan QR Code WhatsApp</h5>
+                            <div class="qr-code-placeholder mb-3">
+                                <!-- QR Code akan di-generate oleh JavaScript -->
+                                <div id="qrCodeDisplay"></div>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" onclick="downloadQRCode()">
+                                <i class="bi bi-download"></i> Download QR Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>SiJago</h5>
+                    <p>Layanan service terpercaya untuk AC, Kulkas, Televisi, dan Mesin Cuci di Kota Bau-Bau.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5>Kontak Kami</h5>
+                    <p><i class="bi bi-telephone"></i> <span id="footerPhone">0812-3456-7890</span></p>
+                    <p><i class="bi bi-envelope"></i> <span id="footerEmail">info@sijago.com</span></p>
+                    <p><i class="bi bi-geo-alt"></i> Kota Bau-Bau, Sulawesi Tenggara</p>
+                    <p>
+                        <a href="javascript:void(0);" onclick="bukaGoogleMaps()" class="text-light">
+                            <i class="bi bi-map"></i> Lihat di Google Maps
+                        </a>
+                    </p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5>Ikuti Kami</h5>
+                    <div class="social-icons">
+                        <a href="javascript:void(0);" onclick="openWhatsApp('Halo SiJago, saya ingin follow media sosial Anda')" class="social-icon whatsapp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-icon instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-icon facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-icon twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">&copy; 2023 SiJago. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
